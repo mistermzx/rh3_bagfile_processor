@@ -14,3 +14,9 @@ docker run -it --rm  -v ~/Documents/rh3_bagfile_processor:/home -e BAGFILE_PATH=
 ```
 ## Upload to dropbox:
 amod19-rh3-ex-process-MartinZiranXu.bag
+
+# Extra Stuff
+## build
+dts devel build -f --arch amd64
+## run
+docker run -it --rm  -v ~/Documents/rh3_bagfile_processor:/home -e BAGFILE_PATH=/home/data/amod19-rh3-ex-record-MartinZiranXu.bag -e OUTPUT_PATH=/home/data/amod19-rh3-ex-process-MartinZiranXu.bag duckietown/rh3_bagfile_processor:v1-amd64
