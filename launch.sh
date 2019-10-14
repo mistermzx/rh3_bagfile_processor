@@ -4,4 +4,5 @@ set -e
 
 # YOUR CODE BELOW THIS LINE
 # ----------------------------------------------------------------------------
-echo "This is an empty launch script. Update it to launch your application."
+cd /home
+python ./packages/my_package/src/bagfile_processor.py

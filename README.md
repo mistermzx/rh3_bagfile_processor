@@ -41,3 +41,9 @@ a different location later.
 
 Change the file `launch.sh` in your repository to
 launch your code.
+
+### How to execute
+# build
+dts devel build -f --arch amd64
+# run
+docker run -it --rm  -v ~/Documents/rh3_bagfile_processor:/home -e BAGFILE_PATH=/home/data/laneFollowing_rh3.bag -e OUTPUT_PATH=/home/data/processedFile_rh3.bag duckietown/rh3_bagfile_processor:v1-amd64
